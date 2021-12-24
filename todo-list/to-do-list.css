@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(212, 230, 247);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.lista-de-afazeres{
+    display: block;
+    margin-left: 35%;
+    margin-top: 50px;
+    width: 450px;
+    height: 500px;
+    border: 2px solid rgb(10, 5, 5);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+#cabecalho{
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 0px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    margin-bottom: 5px;
+}
+#entrada-de-texto{
+    margin-left: 5px;
+    width: 320px;
+    height: 30px;
+    background-color: rgb(233, 221, 221);
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+#entrada-de-texto:hover{
+    background-color: rgb(201, 161, 161);
+}
+
+#adicionar-conteudo{
+    position: relative;
+    right: -325px;
+    top: -30px;
+    margin: 0;
+    width:120px;
+    height: 30px;
+    background-color: rgb(215, 219, 161);
+    cursor: pointer;
+}
+
+#adicionar-conteudo:hover{
+    background-color: rgb(239, 248, 115);
+}
+
+#onde-sera-gerada-lista{
+    display: inline;
+    margin-left: 5px;
+    width: 440px;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+
+
+#lista{
+    margin: 0;
+    padding: 0;
+}
+
+#lista li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 60px;
+    background: rgb(199, 193, 193);
+    transition: 0.5s;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#lista li:hover{
+    background-color:  rgb(153, 149, 149);
+    color: white;
+
+}
+
+#lista li:nth-child(odd){
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+#lista li:nth-child(odd):hover{
+    background-color: rgb(153, 149, 149);
+    color: white;
+}
+
+#lista .active{
+    background: rgb(105, 99, 99);
+    color: rgb(255, 255, 255);
+    text-decoration: line-through;
+}
+
+#lista .active:nth-child(odd){
+    background: rgb(105, 99, 99);
+    color: rgb(255, 255, 255);
+    text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .close{
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 12px 20px 12px 16px;
+  }
+
+  .close:hover{
+      background-color: red;
+      transform: rotate();
+  }
+
+
+.num {
+    position:absolute;
+    left: 0;
+    top:0;
+    height: auto;
+    width: 10%;
+    padding: 12px 16px 12px 10px;
+    background-color: rgb(63, 63, 65);
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+}
+
